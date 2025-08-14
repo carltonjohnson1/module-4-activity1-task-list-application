@@ -1,6 +1,6 @@
 # Coding Challenge as Part of a Coding Diploma I'm Donig**\***
 
-![screenshot to come](preview-screenshot.jpg)
+![screenshot to come](preview-screenshot.png)
 
 ## Activity 4.1: Task List Application
 
