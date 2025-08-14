@@ -1,0 +1,111 @@
+
+/* CSS RESETS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 100%;
+}
+
+
+/* ROOT */
+
+:root {
+
+    /* COLORS */
+    --white: #fff;
+    --black: #000;
+    --primary-color: 
+    --secondary-color: 
+
+
+    /* FONT SIZES */
+    --font-size-s: 0.875rem;
+    --font-size-n: 1rem;
+    --font-size-m: 1.125rem;
+    --font-size-l: 2.25rem;
+    --font-size-xl: 3.635rem;
+    --font-size-xxl: 4.24rem;
+  
+    /* FONT WEIGHT */
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+ 
+    /* BORDER RADIUS */
+    --border-radius-s: 8px;
+    --border-radius-m: 20px;
+    --border-radius-l: 32px;
+    --border-radius-circle: 50%;
+
+    /* SITE MAX WIDTH */
+    --site-max-width: 1240px;
+    
+}
+
+/* GENERAL CSS */
+
+html {
+    scroll-behavior: smooth;
+}
+
+ 
+
+/* IMAGES */
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+/* LINKS */
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+
+/* RESPONSIVE */
+
+/* (DESKTOP)RESPONSIVE ABOVE 1024PX  */
+
+@media screen and (min-width: 1024px) {
+
+
+}
+
+/* (TABLET) RESPONSIVE BETWEEN 769 - 1023PX */
+
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+
+
+}
+
+
+       
+/* (MOBILE) RESPONSIVE BELOW FOR MAX WIDTH 768PX */
+
+@media screen and (max-width: 768px) {
+
+
+
+}
+
+    
+
+
+
+
