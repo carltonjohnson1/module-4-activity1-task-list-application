@@ -1,111 +1,190 @@
-
-/* CSS RESETS */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 100%;
-}
-
-
-/* ROOT */
+/* === GLOBALS === */
 
 :root {
+  --secondaryBackground: #edeef0;
+  --listItemBackground: #dedfe3; 
+  --white: #fff;
+  --whiteText: #fff;
+  --text: #1E1E1E;
+  --tomato: #ff5945;
+  --orange: #FF9E45;
+  --heading: #001f52;
 
-    /* COLORS */
-    --white: #fff;
-    --black: #000;
-    --primary-color: 
-    --secondary-color: 
-
-
-    /* FONT SIZES */
-    --font-size-s: 0.875rem;
-    --font-size-n: 1rem;
-    --font-size-m: 1.125rem;
-    --font-size-l: 2.25rem;
-    --font-size-xl: 3.635rem;
-    --font-size-xxl: 4.24rem;
-  
-    /* FONT WEIGHT */
-    --font-weight-normal: 400;
-    --font-weight-medium: 500;
-    --font-weight-semibold: 600;
-    --font-weight-bold: 700;
- 
-    /* BORDER RADIUS */
-    --border-radius-s: 8px;
-    --border-radius-m: 20px;
-    --border-radius-l: 32px;
-    --border-radius-circle: 50%;
-
-    /* SITE MAX WIDTH */
-    --site-max-width: 1240px;
-    
 }
 
-/* GENERAL CSS */
-
-html {
-    scroll-behavior: smooth;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
- 
 
-/* IMAGES */
+body {
+  font-size: 100%;
+  color: var(--text);
+  font-family:Verdana, Tahoma, sans-serif;
+}
 
-img {
+h1 {
+color: var(--heading);
+font-size: 2.5rem;
+}
+
+
+/* === CONTAINERS === */
+
+
+.padding-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #121212, #001f52);
+  padding: 10px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 50px auto 100px;
+  width: 550px;
+  background: var(--white);
+  padding: 40px 30px 20px;
+  border-radius: 10px;
+}
+
+.top-container {
+  padding: 30px;
+  border-radius: 20px;
+  border: 2px solid var(--orange);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+
+.bottom-container {
+    margin-top: 30px;
     width: 100%;
-    height: auto;
 }
 
 
+/* INPUT */
 
 
-/* LINKS */
 
-a {
-    text-decoration: none;
+input {
+  padding: 16px;
+  background-color: var(--secondaryBackground);
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  color: var(--text);
+  font-size: 1.125rem;
+  margin-right: 10px;
+
 }
 
 button {
-    cursor: pointer;
+  border-radius: 8px;
+  background-color: var(--tomato);
+  color: var(--whiteText);
+  font-size: 1.25rem;
+  font-weight: normal;
+  cursor: pointer;
+  padding: 14px 20px;
+  transition: transform 0.3s ease-in-out;
+  border: 1px solid var(--orange);
+ 
+}
+
+button:hover {
+  transform: scale(1.06);
+}
+
+/* === TASK LISTS=== */
+
+#task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 30px;
+  width: 100%;
+  list-style: none;
+ 
+}
+ 
+.taskItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px; 
+  padding: 10px;
+  border-radius: 10px;
+  transition: transform 0.2s ease;
+  
+}
+
+.taskItem:hover {
+  transform: translateY(-2px);
+} 
+
+#task-list .taskItem {
+  background-color: var(--listItemBackground);
 }
 
 
-
-/* RESPONSIVE */
-
-/* (DESKTOP)RESPONSIVE ABOVE 1024PX  */
-
-@media screen and (min-width: 1024px) {
-
-
+.task {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
 }
 
-/* (TABLET) RESPONSIVE BETWEEN 769 - 1023PX */
-
-@media screen and (min-width: 769px) and (max-width: 1023px) {
-
-
+.task p {
+  white-space: normal;
+  word-break: break-word;
+  flex: 1;
 }
 
+/* === TASK STATE === */
 
-       
-/* (MOBILE) RESPONSIVE BELOW FOR MAX WIDTH 768PX */
-
-@media screen and (max-width: 768px) {
-
-
-
+.taskItem p {
+  font-size: 1rem;
 }
 
-    
+.task.completed p {
+  text-decoration: line-through;
+  color: #cc0000;
+}
+
+/* 
+/* === ICONS === */
+
+.taskItem img {
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+
+.taskItem img:hover {
+  transform: scale(1.2);
+} */
+
+/* === GENERAL === */
+.notepad {
+width: 100px;
+}
+
+  /* CONTAINERS */
 
 
+/* === CSS for screens below or equal to 600px wide - mobiles in mind  === */
+@media (max-width: 600px) {
 
-
+}
