@@ -1,4 +1,4 @@
-# Coding Challenge as Part of a Coding Diploma I'm Donig**\***
+# Coding Challenge as Part of a Coding Diploma I'm Doing
 
 ![screenshot to come](preview-screenshot.png)
 
